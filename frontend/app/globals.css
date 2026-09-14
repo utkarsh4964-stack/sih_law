@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+:root {
+  --color-bg: #050505;
+  --color-surface: #111111;
+  --color-surface-raised: #161616;
+  --color-border: #262626;
+  --color-border-strong: #34343a;
+  --color-primary: #10b981;
+  --color-primary-dim: #0d9467;
+  --color-text: #f5f5f5;
+  --color-muted: #a1a1aa;
+  --color-critical: #ef4444;
+  --color-warning: #f59e0b;
+  --color-info: #3b82f6;
+}
+
+@theme inline {
+  --color-bg: var(--color-bg);
+  --color-surface: var(--color-surface);
+  --color-surface-raised: var(--color-surface-raised);
+  --color-border: var(--color-border);
+  --color-border-strong: var(--color-border-strong);
+  --color-primary: var(--color-primary);
+  --color-primary-dim: var(--color-primary-dim);
+  --color-text: var(--color-text);
+  --color-muted: var(--color-muted);
+  --color-critical: var(--color-critical);
+  --color-warning: var(--color-warning);
+  --color-info: var(--color-info);
+  --font-sans: var(--font-plex-sans);
+  --font-mono: var(--font-plex-mono);
+}
+
+* {
+  border-color: var(--color-border);
+}
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-plex-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--color-primary);
+  color: #032019;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-border-strong);
+  border-radius: 2px;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

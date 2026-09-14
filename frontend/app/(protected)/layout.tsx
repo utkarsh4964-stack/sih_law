@@ -1,0 +1,21 @@
+import { RequireAuth } from "@/components/layout/RequireAuth";
+import { Sidebar } from "@/components/layout/Sidebar";
+import { Topbar } from "@/components/layout/Topbar";
+
+export default function ProtectedLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <RequireAuth>
+      <div className="flex h-screen overflow-hidden bg-bg">
+        <Sidebar />
+        <div className="flex flex-1 flex-col overflow-hidden">
+          <Topbar />
+          <main className="flex-1 overflow-y-auto">{children}</main>
+        </div>
+      </div>
+    </RequireAuth>
+  );
+}

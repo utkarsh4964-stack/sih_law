@@ -1,0 +1,36 @@
+
+> frontend@0.1.0 dev
+> next dev
+
+▲ Next.js 16.3.4 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.0.2.2:3000
+- Environments: .env.local
+✓ Ready in 510ms
+✓ Running next.config.ts took 32ms
+
+○ Compiling /login ...
+ GET /login 200 in 5.0s (next.js: 4.9s, application-code: 195ms)
+ GET / 200 in 398ms (next.js: 311ms, application-code: 87ms)
+ GET /login 200 in 77ms (next.js: 19ms, application-code: 58ms)
+ GET /login 200 in 54ms (next.js: 4ms, application-code: 50ms)
+ GET / 200 in 61ms (next.js: 16ms, application-code: 44ms)
+ GET /login 200 in 88ms (next.js: 28ms, application-code: 61ms)
+ GET /dashboard 200 in 1489ms (next.js: 1246ms, application-code: 243ms)
+ GET /cases 200 in 490ms (next.js: 393ms, application-code: 98ms)
+ GET /audit 200 in 424ms (next.js: 330ms, application-code: 94ms)
+ GET /security 200 in 424ms (next.js: 321ms, application-code: 103ms)
+ GET /search 200 in 409ms (next.js: 309ms, application-code: 100ms)
+ GET /dashboard 200 in 44ms (next.js: 11ms, application-code: 33ms)
+ GET /cases/CR-2026-0192 200 in 2.5s (next.js: 2.4s, application-code: 96ms)
+ GET /documents/DOC-4695a3174c 200 in 1108ms (next.js: 969ms, application-code: 140ms)
+⨯ The directory at "/home/claude/LAW1/frontend/.next/dev" was deleted.
+
+Deleting this directory while Next.js is running can lead to undefined behavior. Restarting the server to recover...
+▲ Next.js 16.3.4 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.0.2.2:3000
+- Environments: .env.local
+✓ Ready in 392ms
+✓ Running next.config.ts took 31ms
+
