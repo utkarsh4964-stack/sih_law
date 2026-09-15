@@ -15,3 +15,4 @@ SQLAlchemy==2.0.52
 uvicorn==0.52.4
 openai
 pytest==8.4.2
+psycopg2-binary==2.9.10
